@@ -1,0 +1,17 @@
+
+{application, lib_http2_handler, [
+    {description, "A simple wrapper around chatterbox lib which adds a top level http2 request handler and routes incoming requests to a request specific application level handler"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib,
+        lager,
+        chatterbox
+    ]},
+    {env, []},
+    {modules, []},
+
+    {licenses, ["Apache 2.0"]},
+    {links, [{"Github", "https://github.com/helium/lib-http2-handler"}]}
+]}.
